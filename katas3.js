@@ -1,11 +1,11 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
+const container = document.getElementById('container');
+
 function showResults(valor){
-    let newElement = document.createElement('p');
-    let newText = document.createTextNode('');
-    newElement.appendChild(newText);
-    let destination = document.getElementsByClassName('body');
-    destination.appendChild(newElement);
+    let newElement = document.createElement('div');
+    newElement.innerText = valor;
+    container.appendChild(newElement);
 }
 
 
@@ -16,7 +16,7 @@ function kata1() {
     }
     return result;
 }
-console.log(kata1())
+showResults(' Kata1: ' + kata1())
 
 
 function kata2() {
@@ -26,7 +26,7 @@ function kata2() {
     }
     return result;
 }
-console.log(kata2())
+showResults(' Kata2: ' + kata2())
 
 function kata3() {
     let result = [];
@@ -35,7 +35,7 @@ function kata3() {
     }
     return result;
 }
-console.log(kata3())
+showResults(' Kata 3: ' + kata3())
 
 function kata4() {
     let result = [];
@@ -44,7 +44,7 @@ function kata4() {
     }
     return result;
 }
-console.log(kata4())
+showResults(' Kata 4: ' + kata4())
 
 function kata5() {
     let result = [];
@@ -55,7 +55,7 @@ function kata5() {
     }
     return result;
 }
-console.log(kata5())
+showResults(' Kata 5: ' + kata5())
 
 function kata6() {
     let result = [];
@@ -66,7 +66,7 @@ function kata6() {
     }
     return result;
 }
-console.log(kata6())
+showResults(' Kata 6: ' + kata6())
 
 function kata7() {
     let result = [];
@@ -77,7 +77,7 @@ function kata7() {
     }
     return result;
 }
-console.log(kata7())
+showResults(' Kata 7: ' + kata7())
 
 function kata8() {
     let result = [];
@@ -88,7 +88,7 @@ function kata8() {
     }
     return result;
 }
-console.log(kata8())
+showResults(' Kata 8: ' + kata8())
 
 function kata9() {
     let result = [];
@@ -99,12 +99,12 @@ function kata9() {
     }
     return result;
 }
-console.log(kata9())
+showResults(' Kata 9: ' + kata9())
 
 function kata10() {
-    console.log(sampleArray)
+    return sampleArray
 }
-console.log(kata10())
+showResults(' Kata 10: ' + kata10())
 
 function kata11() {
     let result = [];
@@ -115,7 +115,7 @@ function kata11() {
     }
     return result;
 }
-console.log(kata11())
+showResults(' Kata 11: ' + kata11())
 
 function kata12() {
     let result = [];
@@ -126,8 +126,8 @@ function kata12() {
     }
     return result;
 }
-console.log(kata12())
-
+showResults(' Kata 12: ' + kata12())
+ 
 function kata13() {
     let result = [];
     for(let i = 0; i < sampleArray.length; i++){
@@ -137,7 +137,7 @@ function kata13() {
     }
     return result;
 }
-console.log(kata13())
+showResults(' Kata 13: ' + kata13())
 
 function kata14() {
     let result = [];
@@ -146,7 +146,7 @@ function kata14() {
     }
     return result;
 }
-console.log(kata14())
+showResults(' Kata 14: ' + kata14())
 
 function kata15() {
     let soma = 0;
@@ -155,7 +155,7 @@ function kata15() {
     }
     return soma
 }
-console.log(kata15())
+showResults(' Kata 15: ' + kata15())
 
 function kata16() {
     let soma = 0;
@@ -164,7 +164,7 @@ function kata16() {
     }
     return soma;
 }
-console.log(kata16())
+showResults(' Kata 16: ' + kata16())
 
 function kata17() {
     let menor = sampleArray[0];
@@ -175,7 +175,7 @@ function kata17() {
     }
     return menor
 }
-console.log(kata17())
+showResults(' Kata 17: ' + kata17())
 
 function kata18() {
     let maior = 0;
@@ -186,7 +186,7 @@ function kata18() {
     }
     return maior
 }
-console.log(kata18())
+showResults(' Kata 18: ' + kata18())
 
 
 
